@@ -1,3 +1,6 @@
+# General
+alias py="python3"
+
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -37,4 +40,6 @@ alias newtag='git tag -a'
 # Tmux
 
 # Vim
-alias vim nvim
+
+# Python Venv
+alias lvnv='source venv/bin/activate.fish'
