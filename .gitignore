@@ -1,7 +1,11 @@
 **/tmux/plugins
 **/nvim/lazyvim.json
 
-**/fish/*
+### Fish ###
+**/fish/fishd.*
+**/fish/fish_history
+**/fish/fish_variables
+**/fish/fish_plugins
+**/fish/config.local.fish
+**/fish/functions/*
 !**/fish/functions/custom
-!**/fish/conf.d
-!**/fish/mac_setup.sh
