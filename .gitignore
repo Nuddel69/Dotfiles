@@ -1,11 +1,15 @@
-**/tmux/plugins
-**/nvim/lazyvim.json
-
 ### Fish ###
 **/fish/fishd.*
 **/fish/fish_history
 **/fish/fish_variables
-**/fish/fish_plugins
 **/fish/config.local.fish
 **/fish/functions/*
+**/fish/completions
+**/fish/themes
 !**/fish/functions/custom
+
+### Neovim ###
+**/nvim/lazyvim.json
+
+### TMUX ###
+**/tmux/plugins
