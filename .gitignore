@@ -4,9 +4,14 @@
 **/fish/fish_variables
 **/fish/config.local.fish
 **/fish/functions/*
-**/fish/completions
-**/fish/themes
 !**/fish/functions/custom
+**/fish/completions
+**/fish/fish.bak
+**/fish/themes
+**/fish/conf.d/*
+!**/fish/conf.d/alias.fish
+!**/fish/conf.d/config.fish
+
 
 ### Neovim ###
 **/nvim/lazyvim.json
