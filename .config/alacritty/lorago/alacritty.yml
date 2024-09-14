@@ -1,0 +1,56 @@
+live_config_reload: true
+
+env:
+  TERM: alacritty
+
+window:
+  padding:
+    x: 15
+    y: 15
+
+  title: Alacritty
+
+  class:
+    instance: Alacritty
+    general:  Alacritty
+
+font:
+  normal:
+    family: SFMono Nerd Font Mono
+    style:  Regular
+
+  size: 9.0
+
+cursor:
+  style:            Beam
+  unfocused_hollow: true
+  thickness:        0.15
+
+colors:
+  primary:
+    background: '#11171d'
+    foreground: '#a8a8a8'
+
+  cursor:
+    text:   '#11171d'
+    cursor: '#a8a8a8'
+
+  normal:
+    black:   '#11171d'
+    red:     '#8c6983'
+    green:   '#828793'
+    yellow:  '#888293'
+    blue:    '#918795'
+    magenta: '#92a28e'
+    cyan:    '#7d8f8c'
+    white:   '#a8a8a8'
+
+  bright:
+    black:   '#11171d'
+    red:     '#9f849b'
+    green:   '#8f7777'
+    yellow:  '#9894ad'
+    blue:    '#a79cad'
+    magenta: '#b294bb'
+    cyan:    '#8d869e'
+    white:   '#a8a8a8'
