@@ -1,0 +1,63 @@
+/**
+ * This theme is intended for a 6 items wide menu
+ * on a 1366x768 pixels resolution.
+ */
+@import "colors.rasi"
+* {
+  /* Settings */
+  font:             "Hurmit Nerd Font Mono 10";
+}
+#window {
+  width: 1366px;
+  height: 768px;
+  /*       vertical   horizontal */
+  padding: 253px      37px;
+  children: [ inputbar, horibox ];
+}
+#inputbar {
+  children: [ textbox-prompt-colon, prompt ];
+  /*      vertical    horizontal */
+  margin: 10px        0px;
+}
+prompt,
+textbox-prompt-colon {
+  /*       top    right   bottom  left */
+  padding: 14px   20px    10px    20px;
+  border: 2px;
+  border-color: @accent;
+}
+#prompt {
+  /*      top     right   bottom  left */
+  margin: 0px     0px     0px     -2px;
+  background-color: @background-light;
+  text-color: @accent;
+}
+#textbox-prompt-colon {
+  expand: false;
+  str: "mpd";
+  background-color: @accent;
+  text-color: @background;
+}
+#horibox {
+  children: [ listview ];
+  padding: 0px;
+}
+#listview {
+  layout: horizontal;
+  spacing: 26px;
+  lines: 6;
+}
+#element {
+  /**
+   * Values bellow are 'no-padding' ones, to which we add 70
+   *       top    right   bottom  left
+   *       -14px  0px     -14px   -93px */
+  padding: 56px   70px    56px    -23px;
+  background-color: @background-light;
+  font: "Hurmit Nerd Font Mono 60";
+}
+#element.selected {
+  background-color: @accent;
+  text-color: @background;
+}
+
