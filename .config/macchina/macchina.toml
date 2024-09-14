@@ -1,0 +1,5 @@
+# no_title = true
+# no_box = false
+# no_ascii = false
+interface = "wlan0"
+custom_ascii = "~/.config/macchina/archlogo.txt"
