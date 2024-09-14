@@ -15,6 +15,7 @@
 
 ### Neovim ###
 **/nvim/lazyvim.json
+**/nvim/autoload/plugged
 
 ### TMUX ###
 **/tmux/plugins
