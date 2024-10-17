@@ -24,6 +24,9 @@ alias grep='grep --color=auto'
 alias egrep='egrep --color=auto'
 alias fgrep='fgrep --color=auto'
 
+# Automatically expand mkdir
+abbr mkdir "mkdir -p"
+
 # git
 alias addup='git add -u'
 alias addall='git add .'
