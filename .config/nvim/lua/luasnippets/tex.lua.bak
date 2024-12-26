@@ -1,0 +1,83 @@
+-- local line_begin = require("luasnip.extras.conditions.expand").line_begin
+-- local autosnippet = ls.extend_decorator.apply(s, { snippetType = "autosnippet" })
+-- local postfix = require("luasnip.extras.postfix").postfix
+-- local tex = require("snippets.tex.utils").conditions -- conditions
+-- local make_condition = require("luasnip.extras.conditions").make_condition
+
+-- local function math()
+--   return vim.api.nvim_eval("vimtex#syntax#in_mathzone()") == 1
+-- end
+--
+-- local function comment()
+--   return vim.eval("vimtex#syntax#in_comment()") == "1"
+-- end
+--
+-- local function env(name)
+--   local is_inside = vim.fn["vimtex#env#is_inside"](name)
+--   return (is_inside[1] > 0 and is_inside[2] > 0)
+-- end
+
+return {
+  s(
+    { trig = "template", name = "Template", dscr = "Latex template and boilerplate" },
+    fmta(
+      [[
+\documentclass[a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage[norsk]{babel}
+\usepackage{amsmath, amssymb}
+
+
+% figure support
+\usepackage{import}
+\usepackage{xifthen}
+\pdfminorversion=7
+\usepackage{pdfpages}
+\usepackage{transparent}
+\newcommand{\incfig}[1]{%
+	\def\svgwidth{\columnwidth}
+	\import{./figures/}{#1.pdf_tex}
+}
+
+\pdfsuppresswarningpagegroup=1
+
+\begin{document}
+	<>
+\end{document}
+]],
+      { i(0) }
+      -- { condition = line_begin, show_condition = line_begin }
+    )
+  ),
+
+  s(
+    { trig = "beg", name = "begin environment", dscr = "Enter a latex environment" },
+    fmta(
+      [[
+  \begin{<>}
+    <>
+  \end{<>}
+  ]],
+      { i(1), i(2), rep(1) }
+    )
+  ),
+
+  s(
+    { trig = "table", name = "Table environment" },
+    fmta(
+      [[
+\begin{table}[<>]
+	\centering
+	\caption{<>}
+	\label{tab:<>}
+	\begin{tabular}{<>}
+	\end{tabular}
+\end{table}
+  ]],
+      { i(0, "htpb"), i(1, "caption"), i(2, "label"), i(3, "c"), i(4) }
+    )
+  ),
+}

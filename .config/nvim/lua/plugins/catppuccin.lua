@@ -1,7 +1,10 @@
 return {
-  { "catppuccin/nvim", opts = {
-    transparent_background = true,
-  } },
+  {
+    "catppuccin",
+    opts = {
+      transparent_background = false,
+    },
+  },
 
   -- Configure LazyVim to load gruvbox
   {
