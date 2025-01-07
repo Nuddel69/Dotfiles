@@ -3,13 +3,17 @@
 **/fish/fish_history
 **/fish/fish_variables
 **/fish/config.local.fish
-**/fish/functions/_*
+**/fish/functions/*
 **/fish/completions
 **/fish/fish.bak
 **/fish/themes
 **/fish/conf.d/*
 !**/fish/conf.d/alias.fish
 !**/fish/conf.d/config.fish
+
+# Function exceptions
+!**/fish/functions/bak.fish
+!**/fish/functions/rsl.fish
 
 
 ### Neovim ###
