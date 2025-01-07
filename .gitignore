@@ -3,8 +3,6 @@
 **/fish/fish_history
 **/fish/fish_variables
 **/fish/config.local.fish
-**/fish/functions/*
-!**/fish/functions/custom
 **/fish/completions
 **/fish/fish.bak
 **/fish/themes
