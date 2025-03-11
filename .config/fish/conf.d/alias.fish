@@ -1,5 +1,4 @@
 # General
-alias py="python3"
 
 # navigation
 alias ..='cd ..'
@@ -41,6 +40,8 @@ alias tag='git tag'
 alias newtag='git tag -a'
 
 # Tmux
+alias ta='tmux new -A -s Main'
+alias td='tmux detach'
 
 # Vim
 
