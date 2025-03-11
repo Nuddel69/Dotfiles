@@ -106,8 +106,8 @@
 # ]
 
 # cmd - return : /Applications/WezTerm.app/Contents/MacOS/wezterm # Launch wezterm
-cmd - return : open -a wezterm # Launch wezterm
+cmd + shift - return : open -a wezterm # Launch wezterm
 
-cmd + shift - return : ~/Scripts/qtb.sh # open qutebrowser
+# cmd + shift - return : ~/Scripts/qtb.sh # open qutebrowser
 
 cmd - m : open -na /Applications/mpv.app $(pbpaste) # open mpv
