@@ -4,12 +4,23 @@
 
 local map = vim.keymap.set
 
+----------
+-- Tmux --
+----------
 map("n", "<C-h>", "<cmd> TmuxNavigateLeft<CR>", { desc = "Go to Left Window", remap = true })
 map("n", "<C-j>", "<cmd> TmuxNavigateDown<CR>", { desc = "Go to Lower Window", remap = true })
 map("n", "<C-k>", "<cmd> TmuxNavigateUp<CR>", { desc = "Go to Upper Window", remap = true })
 map("n", "<C-l>", "<cmd> TmuxNavigateRight<CR>", { desc = "Go to Right Window", remap = true })
 
+-------------
+-- LuaSnip --
+-------------
 map("i", "<C-e>", "<Plug>luasnip-next-choice", { desc = "", remap = true })
 map("i", "<C-w>", "<Plug>luasnip-prev-choice", { desc = "", remap = true })
 map("s", "<C-e>", "<Plug>luasnip-next-choice", { desc = "", remap = true })
 map("s", "<C-w>", "<Plug>luasnip-prev-choice", { desc = "", remap = true })
+
+-------------
+-- Utility --
+-------------
+map("n", "<leader>ue", "<cmd>Hardtime toggle<CR>", { desc = "Toggle Hardtime", remap = true }) -- Toggle Hardtime plugin
