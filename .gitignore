@@ -18,6 +18,7 @@
 
 ### Neovim ###
 **/nvim/lazyvim.json
+**/nvim/lazy-lock.json
 
 ### TMUX ###
 **/tmux/plugins
