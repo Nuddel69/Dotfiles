@@ -16,3 +16,7 @@ set -gx PATH bin $PATH
 set -gx PATH ~/bin $PATH
 set -gx PATH ~/.local/bin $PATH
 fzf --fish | source
+
+# UV Python manager
+uv generate-shell-completion fish | source
+uvx --generate-shell-completion fish | source
