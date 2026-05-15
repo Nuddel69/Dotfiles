@@ -1,4 +1,7 @@
-set fish_greeting
+function fish_greeting
+    bash $HOME/scripts/session_handler.sh
+    fastfetch
+end
 
 ### AUTOCOMPLETE AND HIGHLIGHT COLORS ###
 set fish_color_normal brcyan
