@@ -1,0 +1,26 @@
+binds {
+
+    // ────────────── Keybindings ──────────────
+    // https://github.com/YaLTeR/niri/wiki/Configuration:-Key-Bindings
+
+    Mod+H                               { focus-column-left; }
+    Mod+L                               { focus-column-right; }
+    Mod+Shift+K                         { focus-window-up; }
+    Mod+Shift+J                         { focus-window-down; }
+
+    Mod+CTRL+H                          { move-column-left; }
+    Mod+CTRL+L                          { move-column-right; }
+    Mod+CTRL+K                          { move-column-to-workspace-up; }
+    Mod+CTRL+J                          { move-column-to-workspace-down; }
+
+    // ─── Workspace Switching ───
+    Mod+J                               cooldown-ms=150 { focus-workspace-down; }
+    Mod+K                               cooldown-ms=150 { focus-workspace-up; }
+
+    Mod+Shift+0                     { set-window-height "+10%"; }
+
+    // ─── Media Controls ───
+    XF86AudioPlay                       allow-when-locked=true { spawn-sh "noctalia msg media playPause"; }
+    XF86AudioPause                      allow-when-locked=true { spawn-sh "noctalia msg media play"; }
+
+}

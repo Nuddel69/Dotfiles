@@ -1,0 +1,16 @@
+    window-rule {
+        geometry-corner-radius 5 // Set every window radius to 20
+
+        focus-ring {
+          width 2
+        }
+    }
+
+    window-rule {
+        match app-id="gamescope"
+        open-fullscreen true
+    }
+ xwayland-satellite {
+  // off
+  // path "/home/ymo/.local/bin/xwayland-satellite.a879e5e"  
+}

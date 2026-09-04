@@ -1,0 +1,25 @@
+
+// CachyOS Config
+// Configuration located in  /etc/skel/.config/niri
+
+include "/etc/skel/.config/niri/cfg/animation.kdl"
+include "/etc/skel/.config/niri/cfg/autostart.kdl"
+include "/etc/skel/.config/niri/cfg/keybinds.kdl"
+include "/etc/skel/.config/niri/cfg/input.kdl"
+include "/etc/skel/.config/niri/cfg/display.kdl"
+include "/etc/skel/.config/niri/cfg/layout.kdl"
+include "/etc/skel/.config/niri/cfg/rules.kdl"
+include "/etc/skel/.config/niri/cfg/misc.kdl"
+
+// User Overrides
+
+include "./cfg/animation.kdl"
+include "./cfg/autostart.kdl"
+include "./cfg/keybinds.kdl"
+include "./cfg/input.kdl"
+include "./cfg/display.kdl"
+include "./cfg/layout.kdl"
+include "./cfg/rules.kdl"
+include "./cfg/misc.kdl"
+
+include "noctalia.kdl"
