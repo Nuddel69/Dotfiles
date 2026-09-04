@@ -1,30 +1,8 @@
 # General
 
-# navigation
-alias ..='cd ..'
-alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
-
-# Changing "ls" to "eza"
-alias ls='eza -al --color=always --icons --group-directories-first' # my preferred listing
-alias la='eza -a --color=always --group-directories-first' # all files and dirs
-alias ll='eza -l --color=always --group-directories-first' # long format
-alias lt='eza -aT --color=always --group-directories-first' # tree listing
-alias l.='eza -a | egrep "^\."'
-
-# adding flags
-alias df='df -h' # human-readable sizes
-alias free='free -m' # show sizes in MB
-
-# Colorize grep output (good for log files)
-alias grep='grep --color=auto'
-alias egrep='egrep --color=auto'
-alias fgrep='fgrep --color=auto'
-
-# Automatically expand mkdir
 abbr mkdir "mkdir -p"
+
+alias cd='z'
 
 # git
 alias addup='git add -u'
@@ -40,10 +18,13 @@ alias tag='git tag'
 alias newtag='git tag -a'
 
 # Tmux
-alias ta='tmux new -A -s Main'
+alias ta='tmux new -A -s home'
 alias td='tmux detach'
 
 # Vim
 
 # Python Venv
-alias lvnv='source venv/bin/activate.fish'
+alias lvnv='source .venv/bin/activate.fish'
+
+# LaTeX
+alias latex='tectonic -X compile'
