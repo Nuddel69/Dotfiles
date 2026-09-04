@@ -23,4 +23,3 @@ map("s", "<C-w>", "<Plug>luasnip-prev-choice", { desc = "", remap = true })
 -------------
 -- Utility --
 -------------
-map("n", "<leader>ue", "<cmd>Hardtime toggle<CR>", { desc = "Toggle Hardtime", remap = true }) -- Toggle Hardtime plugin
