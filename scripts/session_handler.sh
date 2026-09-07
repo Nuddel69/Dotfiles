@@ -5,18 +5,23 @@
 SESSIONS=(home dev school orbit)
 FZF_OPTS="--height=80% --layout=reverse --border=rounded --border-label=Session --margin=10%,30%"
 
-for s in "${SESSIONS[@]}"; do
-  tmux has-session -t "$s" 2>/dev/null || tmux new-session -d -s "$s"
-done
-
 if !command -v tmux &>/dev/null; then
   echo "Tmux not installed. Exiting..."
+  exit 1
+fi
+
+if !command -v fzf &>/dev/null; then
+  echo "Fzf not installed. Exiting..."
   exit 1
 fi
 
 if [[ -n "$TMUX" ]]; then
   exit 0
 fi
+
+for s in "${SESSIONS[@]}"; do
+  tmux has-session -t "$s" 2>/dev/null || tmux new-session -d -s "$s"
+done
 
 selection=$(
   {
