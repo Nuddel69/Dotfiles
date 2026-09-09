@@ -2,6 +2,9 @@ binds {
 
     // ────────────── Keybindings ──────────────
     // https://github.com/YaLTeR/niri/wiki/Configuration:-Key-Bindings
+    //
+    // ─── Applications ───
+    Mod+B                               hotkey-overlay-title="Open Browser: zen" { spawn "zen-browser"; }
 
     Mod+H                               { focus-column-left; }
     Mod+L                               { focus-column-right; }
