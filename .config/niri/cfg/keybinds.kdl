@@ -26,4 +26,6 @@ binds {
     XF86AudioPlay                       allow-when-locked=true { spawn-sh "noctalia msg media playPause"; }
     XF86AudioPause                      allow-when-locked=true { spawn-sh "noctalia msg media play"; }
 
+    // ─── Screengrabs ───
+    CTRL+Shift+5                        { spawn-sh "noctalia msg plugin noctalia/screen_recorder:service all toggle"; }
 }
